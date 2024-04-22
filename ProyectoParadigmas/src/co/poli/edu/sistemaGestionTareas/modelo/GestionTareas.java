@@ -7,68 +7,50 @@ import java.util.*;
  */
 public abstract class GestionTareas {
 
-  
-    private List<Usuario> usuarios;
+    private String usuarios;
+    private String tareas;
 
-    public List<Usuario> getUsuarios() {
-		return usuarios;
-	}
+    public String getUsuarios() {
+        return usuarios;
+    }
 
-	public void setUsuarios(List<Usuario> usuarios) {
-		this.usuarios = usuarios;
-	}
+    public void setUsuarios(String usuarios) {
+        this.usuarios = usuarios;
+    }
 
-	public List<Tarea> getTareas() {
-		return tareas;
-	}
+    public String getTareas() {
+        return tareas;
+    }
 
-	public void setTareas(List<Tarea> tareas) {
-		this.tareas = tareas;
-	}
+    public void setTareas(String tareas) {
+        this.tareas = tareas;
+    }
 
-	/**
-     * 
-     */
-    private List<Tarea> tareas;
+    public GestionTareas(String usuarios, String tareas) {
+        super();
+        this.usuarios = usuarios;
+        this.tareas = tareas;
+    }
 
-    public GestionTareas(List<Usuario> usuarios, List<Tarea> tareas) {
-		super();
-		this.usuarios = usuarios;
-		this.tareas = tareas;
-	}
-
-	/**
-     * @param usuario
-     */
-    public void agregarUsuario(Usuario usuario) {
+    public void agregarUsuario(String usuario) {
         // TODO implement here
     }
 
     @Override
-	public String toString() {
-		return "GestionTareas [usuarios=" + usuarios + ", tareas=" + tareas + ", getUsuarios()=" + getUsuarios()
-				+ ", getTareas()=" + getTareas() + "]";
-	}
+    public String toString() {
+        return "GestionTareas [usuarios=" + usuarios + ", tareas=" + tareas + ", getUsuarios()=" + getUsuarios()
+                + ", getTareas()=" + getTareas() + "]";
+    }
 
-	/**
-     * @param usuario
-     */
-    public void eliminarUsuario(Usuario usuario) {
+    public void eliminarUsuario(String usuario) {
         // TODO implement here
     }
 
-    /**
-     * @param tarea
-     */
-    public void agregarTarea(Tarea tarea) {
+    public void agregarTarea(String tarea) {
         // TODO implement here
     }
 
-    /**
-     * @param tarea
-     */
-    public void eliminarTarea(Tarea tarea) {
+    public void eliminarTarea(String tarea) {
         // TODO implement here
     }
-
 }

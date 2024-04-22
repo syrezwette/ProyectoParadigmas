@@ -2,47 +2,34 @@ package co.poli.edu.sistemaGestionTareas.modelo;
 
 import java.util.*;
 
-/**
- * 
- */
 public class Profesor extends Usuario {
 
-    @Override
-	public String toString() {
-		return "Profesor [materias=" + materias + ", getMaterias()=" + getMaterias() + ", getIdUsuario()="
-				+ getIdUsuario() + ", getNombreUsuario()=" + getNombreUsuario() + ", getEmail()=" + getEmail()
-				+ ", getContraseña()=" + getContraseña() + ", getUsuarios()=" + getUsuarios() + ", getTareas()="
-				+ getTareas() + "]";
-	}
+    private String materias;
 
-	public String getMaterias() {
-		return materias;
-	}
+    public Profesor(int idUsuario, String nombreUsuario, String email, String contraseña, String materias) {
+        super(idUsuario, nombreUsuario, email, contraseña); // No se pasan listas de usuarios y tareas
+        this.materias = materias;
+    }
 
-	public void setMaterias(String materias) {
-		this.materias = materias;
-	}
+    public String getMaterias() {
+        return materias;
+    }
 
-	public Profesor(List<Usuario> usuarios, List<Tarea> tareas, int idUsuario, String nombreUsuario, String email,
-			String contraseña, String materias) {
-		super(usuarios, tareas, idUsuario, nombreUsuario, email, contraseña);
-		this.materias = materias;
-	}
+    public void setMaterias(String materias) {
+        this.materias = materias;
+    }
 
-	private String materias;
-
-    /**
-     * @param materia
-     */
     public void agregarMateria(String materia) {
-        // TODO implement here
+        // TODO implementar aquí
     }
 
-    /**
-     * @param materia
-     */
     public void eliminarMateria(String materia) {
-        // TODO implement here
+        // TODO implementar aquí
     }
 
+    @Override
+    public String toString() {
+        return "Profesor [materias=" + materias + ", idUsuario=" + getIdUsuario() + ", nombreUsuario=" + getNombreUsuario() +
+                ", email=" + getEmail() + ", contraseña=" + getContraseña() + "]";
+    }
 }

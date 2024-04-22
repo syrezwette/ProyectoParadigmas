@@ -3,6 +3,7 @@ package co.poli.edu.sistemaGestionTareas.servicios;
 import java.util.*;
 
 import co.poli.edu.sistemaGestionTareas.modelo.GestionTareas;
+import co.poli.edu.sistemaGestionTareas.modelo.Usuario;
 
 /**
  * 
@@ -26,7 +27,7 @@ public interface Operacion {
      * @param gtu 
      * @return
      */
-    public String update(String tipo, GestionTareas gtu);
+    public String update(int idUsuario, Usuario nuevoUsuario);
 
     /**
      * @param tipo 
