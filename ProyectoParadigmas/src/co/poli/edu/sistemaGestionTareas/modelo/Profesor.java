@@ -1,8 +1,9 @@
 package co.poli.edu.sistemaGestionTareas.modelo;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class Profesor extends Usuario {
+public class Profesor extends   Usuario implements Serializable {
 
     private String materias;
 

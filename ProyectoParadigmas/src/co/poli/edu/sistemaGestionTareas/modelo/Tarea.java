@@ -1,11 +1,12 @@
 package co.poli.edu.sistemaGestionTareas.modelo;
 
+import java.io.Serializable;
 import java.util.*;
 
 /**
  * 
  */
-public class Tarea {
+public class Tarea implements Serializable {
 
     private int idTarea;
 

@@ -1,13 +1,15 @@
 package co.poli.edu.sistemaGestionTareas.modelo;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class Usuario extends GestionTareas {
+public class Usuario extends GestionTareas implements Serializable{
 
     private int idUsuario;
     private String nombreUsuario;
     private String email;
     private String contraseña;
+	public int length;
 
     public Usuario(int idUsuario, String nombreUsuario, String email, String contraseña) {
         super(null, null); // No se pasan listas de usuarios y tareas
@@ -55,3 +57,4 @@ public class Usuario extends GestionTareas {
                 + ", contraseña=" + contraseña + "]";
     }
 }
+

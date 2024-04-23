@@ -68,4 +68,9 @@ public class ImpleOperacion implements Operacion {
         }
         return null;
     }
+
+	public Usuario[] getarreglo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
